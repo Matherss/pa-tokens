@@ -22,10 +22,12 @@
              run: npm install
 
            - name: Build package
-             run: npm run build
-             run: git add .
-             run: git commit -m 'build'
-             run: git push
+             run: | 
+              npm run build
+              git add .
+              git commit -m 'build'
+              git push
+
             
            - name: Semantic Release
              run: npx semantic-release
