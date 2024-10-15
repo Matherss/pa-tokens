@@ -27,6 +27,5 @@
            - name: Publish to npm
              env:
                NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}  # добавьте токен в Secrets вашего репозитория
-             run: npm ci
              run: npm publish --provenance --access public
      
