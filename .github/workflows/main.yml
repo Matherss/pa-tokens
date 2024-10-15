@@ -24,8 +24,8 @@
            - name: Install dependencies
              run: npm install
 
-          - name: Increment version
-            run: npm version patch
+           - name: Increment version
+             run: npm version patch
 
            - name: Build package
              run: npm run build
