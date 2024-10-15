@@ -20,5 +20,10 @@
    "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "tag": "latest"
+   },
+   "release": {
+    "releaseRules": [
+        {"message": "**", "release": "patch"}
+      ]
    }
 }
