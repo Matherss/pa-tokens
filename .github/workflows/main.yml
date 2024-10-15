@@ -22,13 +22,18 @@
              run: npm install
 
            - name: Build package
-             run: npm run build
+             run: |
+              npm run build
+              git config --global user.email "mathers_beats@mail.ru"
+              git config --global user.name "matherss"
+              git commit --message 'build'
+              git push
 
-           - name: Archive production artifacts
-             uses: actions/upload-artifact@v4
-             with:
-               name: build
-               path: build/scss/_variables.scss
+          #  - name: Archive production artifacts
+          #    uses: actions/upload-artifact@v4
+          #    with:
+          #      name: build
+          #      path: build/scss/_variables.scss
             
            - name: Semantic Release
              run: npx semantic-release
