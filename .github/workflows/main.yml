@@ -26,6 +26,11 @@
 
            - name: Increment version
              run: npm version patch
+           - name: Push changes
+             run: |
+                git config --local user.email "action@github.com"
+                git config --local user.name "GitHub Action"
+                git push origin master --tags
 
            - name: Build package
              run: npm run build
