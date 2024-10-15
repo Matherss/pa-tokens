@@ -62,8 +62,8 @@ const sd = new StyleDictionary({
     },
   },
   log: {
-    warnings: 'disabled', // 'warn' | 'error' | 'disabled'
-    verbosity: 'silent', // 'default' | 'silent' | 'verbose'
+    warnings: 'warn', // 'warn' | 'error' | 'disabled'
+    verbosity: 'verbose', // 'default' | 'silent' | 'verbose'
     errors: {
       brokenReferences: 'console', // 'throw' | 'console'
     },
