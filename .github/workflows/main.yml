@@ -26,6 +26,7 @@
               npm run build
               git config --global user.email "mathers_beats@mail.ru"
               git config --global user.name "matherss"
+              git add .
               git commit --message 'build'
               git push
 
