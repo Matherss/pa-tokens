@@ -1,6 +1,6 @@
 {
   "name": "pa-tokens",
-  "version": "1.0.0",
+  "version": "0.0.0-semantic-release",
   "main": "index.js",
   "scripts": {
     "build": "node index.js --verbose"
