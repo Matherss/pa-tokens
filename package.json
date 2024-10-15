@@ -22,8 +22,13 @@
     "tag": "latest"
    },
    "release": {
-    "releaseRules": [
-        {"message": "**", "release": "patch"}
-      ]
+    "plugins": [
+      ["@semantic-release/commit-analyzer", {
+        "releaseRules": [
+          {"message": "*", "release": "patch"}
+        ]
+      }],
+      "@semantic-release/release-notes-generator"
+    ]
    }
 }
