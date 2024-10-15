@@ -1,0 +1,16 @@
+{
+  "name": "pa-tokens",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js --verbose"
+  },
+  "keywords": [],
+  "author": "Ilya Konyakhin",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@tokens-studio/sd-transforms": "^1.2.5",
+    "style-dictionary": "^4.1.2"
+  }
+}
